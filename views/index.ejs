@@ -8,7 +8,8 @@
 </head>
 <body>
   <h1>Task List</h1>
-  <form action="/addTask" method="POST">
+  <div>
+  <form action="/addTask" method="POST" id="input-container">
     <input type="text" name="task" placeholder="Add new task">
     <button type="submit">Add</button>
   </form>
@@ -18,10 +19,11 @@
         <%= task %>
         <form action="/removeTask" method="POST" style="display: inline;">
           <input type="hidden" name="taskIndex" value="<%= index %>">
-          <button type="submit">Remove</button>
+          <button type="submit" id="remove-btn">Remove</button>
         </form>
       </li>
     <% }); %>
   </ul>
+</div>
 </body>
 </html>

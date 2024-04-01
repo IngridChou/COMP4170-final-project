@@ -1,31 +1,99 @@
+:root {
+  --background-color-1: #283944;
+  --background-color-2: #000;
+}
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    font-size: 16px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at 50% 50%,
+      var(--background-color-1),
+      var(--background-color-2));
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3em;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border-top-right-radius: 0; 
+  border-bottom-right-radius: 0; 
+  box-shadow: 0 0 10px white;
+  border: none;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.5em; 
+  border-bottom-right-radius: 0.5em; 
+  box-shadow: 0 0 10px white;
+  border: none;
+}
+
+button:hover {
+  border-radius: 0.5em;
+  background-color: #0056b3;
+  box-shadow: 5px 0 20px #0056b3;
+  color: white;
+}
+
+#remove-btn {
+  background-color: rgb(116, 29, 29);
+  box-shadow: 0 0 10px rgb(255, 55, 55);
+  color: rgb(242, 134, 134);
+}
+
+#remove-btn:hover {
+  background-color: rgb(173, 41, 41);
+  box-shadow: 0 0 15px rgb(255, 55, 55);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  min-width: 100%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #283944;
+  border-radius: 1em;
+  box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+}
