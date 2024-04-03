@@ -2,7 +2,7 @@
 
 :root {
   --background-color-1: #283944;
-  --background-color-2: #000;
+  --background-color-2: #292929;
 }
 
 body {
@@ -32,7 +32,7 @@ h1 {
 }
 
 form {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 input[type="text"] {
@@ -58,29 +58,29 @@ button {
   border-bottom-left-radius: 0;
   border-top-right-radius: 0.5em; 
   border-bottom-right-radius: 0.5em; 
-  background-color: #0e58a7;
-  box-shadow: 0 0 10px #0056b3;
+  background-color: #048033;
+  box-shadow: 0 0 8px #045101;
   color: #b5d7fc;
   border: none;
 }
 
 button:hover {
   border-radius: 0.5em;
-  background-color: #0056b3;
-  box-shadow: 5px 0 20px #0056b3;
+  background-color: #3faf6e;
+  box-shadow: 5px 0 18px #48c26f;
   color: white;
 }
 
 #remove-btn {
-  background-color: rgb(116, 29, 29);
-  box-shadow: 0 0 10px rgb(255, 55, 55);
+  background-color: rgb(200, 52, 52);
+  box-shadow: 0 0 10px rgb(216, 63, 63);
   color: rgb(255, 188, 188);
 }
 
 #remove-btn:hover {
-  background-color: rgb(173, 41, 41);
-  box-shadow: 0 0 15px rgb(255, 55, 55);
-  color: white;
+  background-color: rgb(176, 72, 72);
+  box-shadow: 0 0 15px rgb(250, 91, 91);
+  color: rgb(231, 226, 226);
 }
 
 ul {
@@ -92,7 +92,7 @@ ul {
   gap: 1em;
   background-color: #283944;
   border-radius: 1em;
-  box-shadow: 0 0 50px rgb(0, 0, 0);
+  box-shadow: 0 0 40px rgb(31, 30, 30);
 }
 
 li {
