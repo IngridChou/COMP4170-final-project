@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Task List</h1>
+  <h1>Task Management Tool</h1>
   <div>
   <form action="/addTask" method="POST" id="input-container">
     <input type="text" name="task" placeholder="Add new task">
-    <button type="submit">Add</button>
+    <button type="submit">Add to the list</button>
   </form>
   <ul>
     <% tasks.forEach((task, index) => { %>
@@ -19,7 +19,7 @@
         <%= task %>
         <form action="/removeTask" method="POST" style="display: inline;">
           <input type="hidden" name="taskIndex" value="<%= index %>">
-          <button type="submit" id="remove-btn">Remove</button>
+          <button type="submit" id="remove-btn">Remove from the list</button>
         </form>
       </li>
     <% }); %>
